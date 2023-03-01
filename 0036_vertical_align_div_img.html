@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vertical align img in div</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: greenyellow;
+            /*与本身的高度一样*/
+            line-height: 300px;
+        }
+
+        img {
+            /*光vertical-align:middle 并不能保证它在div里面居中，需要将div行高设置与其本上一样*/
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+input到div顶部还有一点点距离
+<div class="father">
+    <img style="width: 100px;height: 120px;"
+         src="https://github.com/Andy963/notePic/blob/main/0010%E7%BD%91%E7%BB%9C%E5%88%86%E5%B1%82.jpg?raw=true">
+</div>
+
+</body>
+</html>
